@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Anytime | What are you doing?</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/master.css"/>
+
+	<script type="text/javascript" src="js/angular/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body data-ng-controller="MainController">
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img width="48" src="images/timer.svg" alt="" />
+					<span>Anytime</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 login-form-container">
+				<h1 class="environment-heading">What are you doing right now?</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+				<form role="form" action="home.html" class="environment-form">
+					<p class="environment-message">Select your mode . . .</p>
+
+					<div class="radios">
+						<div class="radio">
+							<label>
+								<input type="radio" data-ng-model="environment" name="environment" id="on-my-way" value="on-my-way" checked>
+								On my way to a destination.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" data-ng-model="environment" name="environment" id="free-time" value="free-time">
+								I have got some free time.
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" data-ng-model="environment" name="environment" id="looking-around" value="looking-around">
+								I am just looking around.
+							</label>
+						</div>
+					</div>
+
+					<p class="environment-message">Don't worry, you can change this later on.</p>
+
+					<button type="submit" class="btn btn-success btn-environment">Continue <span class="glyphicon glyphicon-chevron-right"></span></button>
+
+					<p class="environment-message highlight move-down">We see that the last time you used <span class="brand">Anytime</span>, you were on your way to work.</p>
+
+					<a class="important-link center" href="home.html?environment=on-my-way&&session=active" class="center-button">Use This Again</a>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/environment.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.navbar-inverse {
+	background-color: black;
+}
+
+.navbar-brand {
+	padding: 0;
+
+	margin-left: 15px !important;
+}
+
+.navbar-brand span {
+	color: white;
+
+	font-size: 38px;
+	line-height: 44px;
+	margin-left: 10px;
+}
+
+.navbar-brand span,
+.navbar-brand img {
+	float: left;
+}
+
+input.ng-invalid {
+	border: 1px solid red;
+}
+
+.environment-form {
+	/*margin-top: 10px;*/
+}
+
+.environment-heading {
+	text-align: center;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 66px;
+}
+
+.environment-message {
+	text-align: center;
+	font-style: italic;
+
+	color: #999;
+}
+
+.btn-environment {
+	display: block;
+
+	padding: 5px;
+	padding-left: 40px;
+	padding-right: 40px;
+
+	font-size: 18pt;
+	font-weight: 300;
+
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.btn-environment .glyphicon {
+	font-size: 15pt;
+}
+
+.radios {
+	width: 280px;
+
+	margin: 0 auto;
+}
+
+.environment-form .radios label {
+	font-size: 14pt;
+	font-weight: 300;
+	line-height: 14pt;
+}
+
+.environment-form .radios .radio {
+	margin-bottom: 15px;
+}
+
+.card {
+	background: #FFF;
+
+	margin-bottom: 20px;
+
+	box-shadow: 0 0 4px black;
+	padding: 5px;
+}
+
+.card > .card-body {
+	/*min-height: 150px;*/
+	height: 200px;
+
+	overflow: auto;
+}
+
+.card > .card-body.free-height {
+	height: auto;
+}
+
+.card.stock-market,
+.card.stock-market > .card-body {
+	/*overflow: inherit;*/
+}
+
+.card > .card-header {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+
+	border-bottom: 1px solid #EEE;
+}
+
+.card > .card-header > .card-title {
+	margin: 0;
+}
+
+.move-down {
+	margin-top: 30px;
+}
+
+.center {
+	display: block;
+
+	margin: 0 auto;
+}
+
+.important-link {
+	width: 100px;
+
+	color: red;
+
+	font-weight: bold;
+
+	text-decoration: underline;
+}
+
+.highlight {
+	color: #333;
+
+	font-weight: bold;
+}
+
+.brand {
+	font-style: normal;
+
+	font-size: 1.1em;
+
+	/* font-weight: bold; */
+}
+
+.secondary-navbar {
+	background-color: #EEE;
+	color: #111;
+
+	overflow: hidden;
+}
+
+.secondary-navbar ul {
+	list-style-type: none;;
+
+	margin: 0;
+}
+
+.secondary-navbar ul li {
+	float: left;
+
+	margin-right: 20px;
+}
+
+.secondary-navbar ul li,
+.secondary-navbar ul li a {
+	font-weight: bold;
+}
+
+.secondary-navbar > ul > li.red {
+	color: red;
+}
+
+.secondary-navbar > ul > li.green {
+	color: green;
+}
+
+.time-required {
+	color: red;
+
+	position: absolute;
+	top: -2px;
+	left: 15px;
+
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.time-selector {
+	overflow: hidden;
+
+	margin: 0 auto;
+
+	width: 300px;
+}
+
+.time-selector .unit {
+	margin: 10px;
+}
+
+.time-selector > .unit label {
+	display: block;
+
+	text-align: center;
+}
+
+.time-selector > .unit input[type=number] {
+	width: 75px;
+	font-size:24px;
+	padding: 10px;
+
+	font-weight: bold;
+	font-family: "Consolas";
+}
+
+.clearfix {
+	clear: both;
+}
