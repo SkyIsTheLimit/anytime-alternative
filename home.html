@@ -58,145 +58,111 @@
 
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="card">
-					<div class="card-header">
-						<h3 class="card-title"><span class="glyphicon glyphicon-bullhorn pull-left"></span>&nbsp;&nbsp;Top News</h3>
-					</div>
-					<div class="card-body">
-						<div class="list-group">
-							<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">Cricket</h4>
-							<p class="list-group-item-text">XXX beat ABC</p>
-							</a>
-
-							<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">Company ABC's Stock has gone up . . .</h4>
-							<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, voluptates.</p>
-							</a>
-
-							<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">HTML 5 Update</h4>
-							<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, voluptates.</p>
-							</a>
-
-							<a href="#" class="list-group-item">
-							<h4 class="list-group-item-heading">Player PQR is injured.</h4>
-							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-							</a>
-						</div>
-					</div>
-					<div class="card-footer"></div>
-				</div>
-			</div>
-
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="card">
-					<div class="card-header">
-						<h3 class="card-title"><span class="glyphicon glyphicon-tower pull-left"></span>&nbsp;&nbsp;Sports</h3>
-					</div>
-					<div class="card-body">
-						<div class="list-group">
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 10:00</span>
-							<h4 class="list-group-item-heading">Cricket</h4>
-							<p class="list-group-item-text">XXX beat ABC</p>
-							</a>
-
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 45:00</span>
-							<h4 class="list-group-item-heading">Football</h4>
-							<p class="list-group-item-text">PQR beat XYZ</p>
-							</a>
-
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 30:00</span>
-							<h4 class="list-group-item-heading">F1 Racing</h4>
-							<p class="list-group-item-text">A Race is coming up.</p>
-							</a>
-						</div>
-					</div>
-					<div class="card-footer"></div>
-				</div>
-			</div>
-
-			<div class="col-sm-12 col-md-6 col-lg-4">
-				<div class="card">
-					<div class="card-header">
-						<h3 class="card-title"><span class="glyphicon glyphicon-facetime-video pull-left"></span>&nbsp;&nbsp;Videos</h3>
-					</div>
-					<div class="card-body">
-						<div class="list-group">
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 30:00</span>
-							<h4 class="list-group-item-heading">Megastructures Documentary</h4>
-							<p class="list-group-item-text">The Empire State Building . . .</p>
-							</a>
-
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 40:00</span>
-							<h4 class="list-group-item-heading">Nat Geo Documentary</h4>
-							<p class="list-group-item-text">When Tigers Attack . . .</p>
-							</a>
-
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 1:10:00</span>
-							<h4 class="list-group-item-heading">Angular JS</h4>
-							<p class="list-group-item-text">Angular JS Tutorial . . . </p>
-							</a>
-						</div>
-					</div>
-					<div class="card-footer"></div>
-				</div>
-			</div>
-
-			<div class="col-sm-12 col-md-6 col-lg-4" data-ng-hide="mode == modes['looking-around'] || !session">
+			<div class="col-xs-12 col-md-4" data-ng-if="session">
 				<div class="card">
 					<div class="card-header">
 						<h3 class="card-title"><span class="glyphicon glyphicon-calendar pull-left"></span>&nbsp;&nbsp;Today's Plan</h3>
 					</div>
-					<div class="card-body">
+
+					<div class="card-body free-height">
 						<div class="list-group">
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 10:00</span>
-							<h4 class="list-group-item-heading">HTML 5 Update</h4>
-							<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, voluptates.</p>
+							<a href="#" class="list-group-item clearfix">
+							<div class="pull-left">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Cricket</h4>
+								<span class="label label-success">Sports</span>
+								<span class="time-required" data-ng-if="session">Time Required 5:00</span>
+								<p class="list-group-item-text">XXX beat ABC</p>
+							</div>
+							<button class="start btn btn-success pull-right">Start&nbsp;&nbsp;<span class="glyphicon glyphicon-play"></span></button>
 							</a>
 
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 45:00</span>
-							<h4 class="list-group-item-heading">Mega Structures Documentary</h4>
-							<p class="list-group-item-text">The Empire State Building . . .</p>
+							<a href="#" class="list-group-item clearfix">
+							<div class="pull-left">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Company ABC's Stock has gone up . . .</h4>
+								<span class="label label-primary">Stocks</span>
+								<span class="time-required" data-ng-if="session">Time Required 10:00</span>
+								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, voluptates.</p>
+							</div>
+							<button class="start btn btn-success pull-right">Start&nbsp;&nbsp;<span class="glyphicon glyphicon-play"></span></button>
 							</a>
 
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 5:00</span>
-							<h4 class="list-group-item-heading">Break</h4>
-							<p class="list-group-item-text">Have a break, have a kitkat :)</p>
+							<a href="#" class="list-group-item clearfix">
+							<div class="pull-left">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;&nbsp;HTML 5 Update</h4>
+								<span class="label label-info">Technology</span>
+								<span class="time-required" data-ng-if="session">Time Required 20:00</span>
+								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, voluptates.</p>
+							</div>
+							<button class="start btn btn-success pull-right">Start&nbsp;&nbsp;<span class="glyphicon glyphicon-play"></span></button>
 							</a>
 
-							<a href="#" class="list-group-item">
-							<span class="time-required" data-ng-if="session">Time Required 8:00</span>
-							<h4 class="list-group-item-heading">Music</h4>
-							<p class="list-group-item-text">Music soothes your muscles and prepares you for the day.</p>
+							<a href="#" class="list-group-item clearfix">
+							<div class="pull-left">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Player PQR is injured.</h4>
+								<span class="label label-success">Sports</span>
+								<span class="time-required" data-ng-if="session">Time Required 7:00</span>
+								<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+							</div>
+							<button class="start btn btn-success pull-right">Start&nbsp;&nbsp;<span class="glyphicon glyphicon-play"></span></button>
 							</a>
 						</div>
 					</div>
-					<div class="card-footer"></div>
 				</div>
 			</div>
 
-			<div class="col-sm-12 col-md-12 col-lg-8">
-				<div class="card stock-market">
+			<div class="col-xs-12 col-md-8">
+				<div class="card">
 					<div class="card-header">
-						<h3 class="card-title"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;&nbsp;The Stock Market</h3>
+						<h3 class="card-title"><span class="glyphicon glyphicon-bullhorn pull-left"></span>&nbsp;&nbsp;Top Items</h3>
 					</div>
+
 					<div class="card-body free-height">
-						<div id="stock">
-							
+						<div class="list-group">
+							<a href="#" class="list-group-item clearfix">
+							<div class="pull-left">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Cricket</h4>
+								<span class="label label-success">Sports</span>
+								<span class="time-required" data-ng-if="session">Time Required 5:00</span>
+								<p class="list-group-item-text">XXX beat ABC</p>
+							</div>
+							<button class="start btn btn-success pull-right">Start&nbsp;&nbsp;<span class="glyphicon glyphicon-play"></span></button>
+							</a>
+
+							<a href="#" class="list-group-item clearfix">
+							<div class="pull-left">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Company ABC's Stock has gone up . . .</h4>
+								<span class="label label-primary">Stocks</span>
+								<span class="time-required" data-ng-if="session">Time Required 10:00</span>
+								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, voluptates.</p>
+							</div>
+							<button class="start btn btn-success pull-right">Start&nbsp;&nbsp;<span class="glyphicon glyphicon-play"></span></button>
+							</a>
+
+							<a href="#" class="list-group-item clearfix">
+							<div class="pull-left">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;&nbsp;HTML 5 Update</h4>
+								<span class="label label-info">Technology</span>
+								<span class="time-required" data-ng-if="session">Time Required 20:00</span>
+								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, voluptates.</p>
+							</div>
+							<button class="start btn btn-success pull-right">Start&nbsp;&nbsp;<span class="glyphicon glyphicon-play"></span></button>
+							</a>
+
+							<a href="#" class="list-group-item clearfix">
+							<div class="pull-left">
+								<h4 class="list-group-item-heading"><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;Player PQR is injured.</h4>
+								<span class="label label-success">Sports</span>
+								<span class="time-required" data-ng-if="session">Time Required 7:00</span>
+								<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+							</div>
+							<button class="start btn btn-success pull-right">Start&nbsp;&nbsp;<span class="glyphicon glyphicon-play"></span></button>
+							</a>
 						</div>
 					</div>
-					<div class="card-footer"></div>
+
+					<div class="card-footer">
+						
+					</div>
 				</div>
 			</div>
 		</div>
